@@ -17,7 +17,7 @@ public class ActividadPreferencias extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Creamos la transacción y añadimos el PreferenceFragment creado
-        getFragmentManager().beginTransaction()
+        getSupportFragmentManager().beginTransaction()
                 .replace(android.R.id.content, new PreferenciasFragment())
                 .commit();
     }
