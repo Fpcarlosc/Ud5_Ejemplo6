@@ -2,7 +2,7 @@ package com.example.ud5_ejemplo6;
 
 import android.os.Bundle;
 
-import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 
 public class PreferenciasFragment extends PreferenceFragmentCompat {
 
