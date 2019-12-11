@@ -31,10 +31,10 @@ En él añadiremos los pares de clave/valor que queremos guardar. en este caso d
 
 ## Paso 3: Creación de la clase _PreferenciasFragment_
 
-En ella añadiremos las preferencias creadas en el fichero _preferencias.xml_. Ésta heredará de _PreferenceFragment_.
+En ella añadiremos las preferencias creadas en el fichero _preferencias.xml_. Ésta heredará de _PreferenceFragmentCompat_.
 
 ```
-public class PreferenciasFragment extends PreferenceFragment {
+public class PreferenciasFragment extends PreferenceFragmentCompat  {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -55,7 +55,7 @@ public class ActividadPreferencias extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Creamos la transacción y añadimos el PreferenceFragment creado
-        getFragmentManager().beginTransaction()
+        getSupportFragmentManager().beginTransaction()
                 .replace(android.R.id.content, new PreferenciasFragment())
                 .commit();
     }
