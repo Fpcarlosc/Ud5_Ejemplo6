@@ -6,7 +6,7 @@ consistirá en cambiar a modo noche según las preferencias guardadas por el usu
 negro y el color del texto de negro a blanco.
 
 
-Para ello tenemos que seguir los siguientes pasos:
+Para ello tenemos que seguir los siguientes pasos (antes deberemos incluir la dependencia _implementation 'com.google.android.material:material:1.0.0'_ en el fichero _build.gradle(Module:app)_:
 
 ## Paso 1: Añadir dependencias al _gradle_
 
